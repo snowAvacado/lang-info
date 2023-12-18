@@ -1,4 +1,4 @@
-# lang-info
+# lang-lines
 
 simple script to show nr of lines for each language type used.
 
