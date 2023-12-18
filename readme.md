@@ -1,6 +1,7 @@
-#lang-info
-simple script to show nr of lines for each programming languages
-and type of files used
+# lang-info
+
+simple script to show nr of lines for each language type used.
+
 "usage: count_lines.py <repo_url> 
 `
  below example is for kuberenetes python client

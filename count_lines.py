@@ -43,7 +43,6 @@ if __name__ == "__main__":
     temp_test_path = Path(".").cwd().joinpath("count_lines")
     # check if directory exists, if exists remove and create new
     if os.path.exists(temp_test_path):
-        #print("count_lines.py: test Folder %s exists." % temp_test_path)
         rmdir(temp_test_path)
         os.mkdir(temp_test_path)
     else:
