@@ -1,6 +1,7 @@
 # lang-lines
 
-simple script to show nr of lines for each language in git repo.
+simple script to show nr of lines for each language (.c, .py , .go etc.)
+\files in git repo.
 
 usage:
 

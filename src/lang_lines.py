@@ -1,12 +1,18 @@
 import sys
 import os
 import time
+import subprocess
 
 from pathlib import Path
 from git import Repo
 
-from util import rmdir
 from lang_extns import lang_extensions_map
+
+#function to remove in temp folder
+def rmdir(dir_path: Path):
+    result = subprocess.run(["rm","-r","-f", dir_path], capture_output=True, text=True)
+    if len(result.stderr):
+        raise "cannot delete previous dir"
 
 lang_lines_map = dict()
 failed_to_read_files = list()
