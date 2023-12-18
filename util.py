@@ -15,5 +15,5 @@ def rm_dir(dir_path: Path):
              continue
         else :
             os.remove(file)
-    os.rmdir(dir_path)    
+    os.rmdir(dir_path)
 

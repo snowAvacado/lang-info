@@ -1,5 +1,5 @@
 
-lang_extension_dict = {
+lang_extensions_map = {
 ".bsl" : "1C Enterprise" ,
 ".os" : "1C Enterprise" ,
 ".2da" : "2-Dimensional Array" ,
