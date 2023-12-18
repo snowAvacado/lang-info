@@ -2,12 +2,20 @@
 
 simple script to show nr of lines for each language type used.
 
-"usage: lang_lines.py <repo_url> 
-`
- below example is for kuberenetes python client
+usage:
+step1: clone this repo, i.e
 ```bash
-/repo/lang-lines/src$ python3 lang_lines.py https://github.com/kubernetes-client/python.git
-lang_lines.py: test Folder /repo/lang-lines/src/lang_lines created
+git clone https://github.com/snowAvacado/lang-lines.git
+```
+step2: cd to src
+```bash
+cd lang-lines/src
+```
+step3: test our script 
+usage: lang_lines.py <repo_url> 
+
+```bash
+$ python3 lang_lines.py https://github.com/kubernetes-client/python.git
 total: 491219 lines.
 .txt : 54
 .rst : 10147
@@ -31,4 +39,3 @@ total: 491219 lines.
 .bat : 10
 success, time elapsed : 0.781032 seconds
 ```
-
