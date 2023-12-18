@@ -1,8 +1,9 @@
 # lang-lines
 
-simple script to show nr of lines for each language type used.
+simple script to show nr of lines for each language in git repo.
 
 usage:
+
 step1: clone this repo, i.e
 ```bash
 git clone https://github.com/snowAvacado/lang-lines.git
@@ -12,7 +13,10 @@ step2: cd to src
 cd lang-lines/src
 ```
 step3: test our script 
+
 usage: lang_lines.py <repo_url> 
+
+for example: using kubernetes python client shows below info
 
 ```bash
 $ python3 lang_lines.py https://github.com/kubernetes-client/python.git
