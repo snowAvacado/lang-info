@@ -36,22 +36,22 @@ def count_lines_dir(dir_path: Path) -> int:
 
 if __name__ == "__main__":
     if len(sys.argv) != 2 :
-        print("usage: count_lines.py <repo_url>")
+        print("usage: lang_lines.py <repo_url>")
         exit()
     
     repo_url = sys.argv[1]
-    temp_test_path = Path(".").cwd().joinpath("count_lines")
+    temp_test_path = Path(".").cwd().joinpath("lang_lines")
     # check if directory exists, if exists remove and create new
     if os.path.exists(temp_test_path):
+        print("lang_lines.py: test Folder %s already exists. deleting.." % temp_test_path)
         rmdir(temp_test_path)
         os.mkdir(temp_test_path)
     else:
         os.mkdir(temp_test_path)
-        print("count_lines.py: test Folder %s created" % temp_test_path)
     try :
         Repo.clone_from(repo_url, temp_test_path)
     except  :
-        print("count_lines.py: problem with <repo_url> , failed")
+        print("lang_lines.py: problem with <repo_url> , failed")
         exit()
     start_time = time.time()
     total_lines = count_lines_dir(temp_test_path)
@@ -65,5 +65,6 @@ if __name__ == "__main__":
                 print("Problems in counting lines in below file:")
                 print(file.name)
     print("success, time elapsed : %f seconds"%(time.time()-start_time))
+    rmdir(temp_test_path)
 
 
