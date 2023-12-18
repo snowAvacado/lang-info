@@ -72,5 +72,3 @@ if __name__ == "__main__":
                 print(file.name)
     print("success, time elapsed : %f seconds"%(time.time()-start_time))
     rmdir(temp_test_path)
-
-

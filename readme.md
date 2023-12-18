@@ -44,3 +44,16 @@ total: 491219 lines.
 .bat : 10
 success, time elapsed : 0.781032 seconds
 ```
+
+using this repo, 
+<br /> src/lang_extns.py has 1574 lines
+<br /> src/lang_lines.py has 76 lines
+<br /> readme.md has 46 has lines
+
+```bash
+$ python3 lang_lines.py https://github.com/snowAvacado/lang-lines.git
+total: 1696 lines.
+.py : 1650
+.md : 46
+success, time elapsed : 0.002009 seconds
+```
