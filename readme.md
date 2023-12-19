@@ -43,4 +43,4 @@ total: 497789 lines.
 success, time elapsed : 0.664469 seconds
 
 ```
-output format: <number of files> <extension> : <number of lines>
+output format: number_of_files file_extension : number_of_lines 
