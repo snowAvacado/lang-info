@@ -1,23 +1,21 @@
-# lang-lines
+# lang-line
+This tool displays total number of lines for each extension (.c, .py , .go etc.) in a github repo.
 
-shows number of lines in a file for each extension (.c, .py , .go etc.)
-<br />in a github repo.
+Usage:
 
-usage:
-
-Step1: clone this repo, i.e
+Step1: Clone this repo
 ```bash
 git clone https://github.com/snowAvacado/lang-lines.git
 ```
-Step2: cd to src
+Step2: change directory to src
 ```bash
 cd lang-lines/src
 ```
-step3: test
+Step3: test
 
-usage: python3 lang_lines.py <repo_url> 
+Usage: python3 lang_lines.py <repo_url> 
 
-for example: with kubernetes python client repo url , shows below info
+For example: Testing with kubernetes python client repo URL
 
 ```bash
 $ python3 lang_lines.py https://github.com/kubernetes-client/python.git
@@ -45,15 +43,3 @@ total: 491219 lines.
 success, time elapsed : 0.781032 seconds
 ```
 
-another example using this repo, 
-<br /> src/lang_extns.py has 1574 lines
-<br /> src/lang_lines.py has 76 lines
-<br /> readme.md has 46 has lines
-
-```bash
-$ python3 lang_lines.py https://github.com/snowAvacado/lang-lines.git
-total: 1696 lines.
-.py : 1650
-.md : 46
-success, time elapsed : 0.002009 seconds
-```
