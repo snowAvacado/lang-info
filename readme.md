@@ -1,4 +1,4 @@
-# lang-line
+# lang-lines
 This tool displays total number of lines for each extension (.c, .py , .go etc.) in a github repo.
 
 Usage:
