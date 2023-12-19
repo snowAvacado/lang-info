@@ -19,27 +19,28 @@ For example: Testing with kubernetes python client repo URL
 
 ```bash
 $ python3 lang_lines.py https://github.com/kubernetes-client/python.git
-total: 491219 lines.
-.txt : 54
-.rst : 10147
-.py : 242512
-.Makefile : 27
-.md : 69903
-.in : 9
-.cfg : 9
-.ini : 39
-.yml : 168
-.Dockerfile : 7
-.ipynb : 1778
-.yaml : 416
-.OWNERS : 20
-.json : 89631
-.sh : 1213
-.LICENSE : 403
-.SECURITY_CONTACTS : 30
-.unprocessed : 74796
-.diff : 47
-.bat : 10
-success, time elapsed : 0.781032 seconds
+total: 497789 lines.
+5 .txt : 54
+1270 .rst : 10275
+714 .py : 245527
+1 .Makefile : 27
+638 .md : 71003
+1 .in : 9
+2 .cfg : 9
+2 .ini : 39
+5 .yml : 168
+1 .Dockerfile : 7
+6 .ipynb : 1778
+20 .yaml : 416
+2 .OWNERS : 20
+2 .json : 90891
+11 .sh : 1213
+2 .LICENSE : 403
+2 .SECURITY_CONTACTS : 30
+1 .unprocessed : 75863
+2 .diff : 47
+1 .bat : 10
+success, time elapsed : 0.664469 seconds
+
 ```
 

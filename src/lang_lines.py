@@ -15,6 +15,7 @@ def rmdir(dir_path: Path):
         raise "cannot delete previous dir"
 
 lang_lines_map = dict()
+lang_files_map = dict()
 failed_to_read_files = list()
 
 #counts lines in directory recursively
@@ -36,6 +37,10 @@ def count_lines_dir(dir_path: Path) -> int:
                     else:
                         lang_lines_map[file_extn] = lines
                     lines_in_files = lines_in_files + lines
+                    if file_extn in lang_files_map:
+                        lang_files_map[file_extn] += 1
+                    else:
+                        lang_files_map[file_extn] = 1
             except:
                 failed_to_read_files.append(file)
     return lines_in_dir + lines_in_files
@@ -63,7 +68,7 @@ if __name__ == "__main__":
     total_lines = count_lines_dir(temp_test_path)
     print("total: %d lines."%total_lines)
     for key,value in lang_lines_map.items():
-        print(key,":",value)
+        print(lang_files_map[key],key,":",value)
     if len(failed_to_read_files):
         for file in failed_to_read_files:
             file_extn = "." + file.name.split(".")[-1]
