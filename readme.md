@@ -4,6 +4,13 @@ displays total number of lines and files for each extension (.c, .py , .go etc.)
 one use case is to know feasibility of porting source code frome one programming language to  <br /> other based on
 number of files and lines information.
 <br /> <br />
+
+## Requirements:
+Git, GitPython , Python3
+```bash
+pip install GitPython
+```
+
 ## Usage:
 
 ### Step1: Clone this repo
