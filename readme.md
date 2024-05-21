@@ -1,8 +1,8 @@
 # lang-lines
 displays total number of lines and files for each extension (.c, .py , .go etc.) in a github repo from CLI
 <br /><br />
-one use case is to know feasibility of porting source code frome one programming language to  <br /> other based on
-number of files and lines information.
+one use case is to evaluate feasibility of porting source code frome one programming language to  <br /> other based on
+number of files and lines information for a hobby project.
 <br /> <br />
 
 ## Requirements:
